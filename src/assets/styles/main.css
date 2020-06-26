@@ -1,0 +1,20 @@
+@import "./tailwind.css";
+@import "./fonts.css";
+
+* {
+    @apply relative m-0 p-0 box-border overflow-hidden;
+}
+
+*:focus {
+    @apply outline-none !important;
+}
+
+html, body {
+    @apply h-screen w-screen font-montserrat text-gray-900 bg-main-bg;
+}
+
+a, input[type='submit'], input[type='image'], label[for],select, button,
+.pointer, .btn, a:hover, input[type='submit']:hover, input[type='image']:hover,
+label[for]:hover, select:hover, button:hover, .pointer:hover, .btn:hover {
+    cursor: pointer;
+}
