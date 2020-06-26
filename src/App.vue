@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import { dispatch, mapActions, mapState } from "vuex";
+import { mapActions, mapState } from "vuex";
 import DefaultLayout from "@/components/layout/DefaultLayout.vue";
 import NotificationContainer from "@/components/notifications/NotificationContainer.vue";
 

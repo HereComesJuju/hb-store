@@ -10,7 +10,7 @@
 
 <script>
 import { mapActions, mapState, mapGetters } from "vuex";
-import { ProductSet, Product } from "@/types/store/product";
+import { Product } from "@/types/store/product";
 import ProductCard from "@/components/ProductCard.vue";
 
 export default {

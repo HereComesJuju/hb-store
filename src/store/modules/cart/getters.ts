@@ -1,7 +1,6 @@
 import {
   CartItem,
   CartState,
-  MUTATION_TYPES,
   ProductCartItemSet,
   ProductCartItem
 } from "@/types/store/cart";
@@ -9,7 +8,7 @@ import { RootState } from "@/types/store/root";
 import { GetterTree } from "vuex";
 import { Product } from "@/types/store/product";
 
-const getters: GetterTree<CartState, any> = {
+const getters: GetterTree<CartState, RootState> = {
   getItemById: (state: CartState) => (itemId: number) =>
     state.cart.items.find(({ id }: CartItem) => id === itemId),
   cartSize: (state: CartState, getters) =>

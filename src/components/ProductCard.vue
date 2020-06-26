@@ -18,7 +18,7 @@
 </template>
 
 <script>
-import { mapActions, mapState, mapGetters } from "vuex";
+import { mapActions } from "vuex";
 import { Product } from "@/types/store/product";
 import toCurrency from "@/helpers/formatters/currencyFormatter";
 

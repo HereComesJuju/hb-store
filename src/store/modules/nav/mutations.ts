@@ -1,7 +1,5 @@
-import { ActionContext, Action } from "vuex";
 import { MUTATION_TYPES } from "@/types/store/nav";
 import { NavState } from "@/types/store/nav";
-import { RootState } from "@/types/store/root";
 
 const mutations = {
   [MUTATION_TYPES.SET_PAGE_HEADER](state: NavState, title: string) {

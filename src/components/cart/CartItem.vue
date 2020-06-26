@@ -28,7 +28,7 @@
 </template>
 
 <script>
-import { mapActions, mapState, mapGetters } from "vuex";
+import { mapActions } from "vuex";
 import { CartItem } from "@/types/store/cart";
 import toCurrency from "@/helpers/formatters/currencyFormatter";
 

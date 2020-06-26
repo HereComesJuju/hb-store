@@ -1,7 +1,6 @@
 import { MutationTree } from "vuex";
 import {
   CartItem,
-  Cart,
   MUTATION_TYPES,
   CartState,
   CartItemSet

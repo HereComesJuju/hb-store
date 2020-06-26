@@ -1,4 +1,4 @@
-import { ActionContext, Action } from "vuex";
+import { ActionContext } from "vuex";
 import { ACTION_TYPES, MUTATION_TYPES } from "@/types/store/nav";
 import { NavState } from "@/types/store/nav";
 import { RootState } from "@/types/store/root";

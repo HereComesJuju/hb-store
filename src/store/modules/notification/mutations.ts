@@ -2,7 +2,6 @@ import { v4 } from "uuid";
 import {
   MUTATION_TYPES,
   NotificationState,
-  NotificationSet,
   Notification
 } from "@/types/store/notification";
 
