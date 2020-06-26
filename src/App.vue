@@ -1,29 +1,39 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" />
+    <NotificationContainer />
+    <DefaultLayout>
+      <router-view />
+    </DefaultLayout>
   </div>
 </template>
 
-<script lang="ts">
-import Vue from "vue";
-import HelloWorld from "./components/HelloWorld.vue";
+<script>
+import { dispatch, mapActions, mapState } from "vuex";
+import DefaultLayout from "@/components/layout/DefaultLayout.vue";
+import NotificationContainer from "@/components/notifications/NotificationContainer.vue";
 
-export default Vue.extend({
+export default {
   name: "App",
   components: {
-    HelloWorld
+    DefaultLayout,
+    NotificationContainer
+  },
+  computed: {
+    ...mapState({
+      nav: state => state.nav
+    })
+  },
+  methods: {
+    ...mapActions("product", ["fetchProducts"])
+  },
+  async mounted() {
+    await this.fetchProducts();
   }
-});
+};
 </script>
 
-<style>
+<style scoped>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  @apply h-full w-full;
 }
 </style>
