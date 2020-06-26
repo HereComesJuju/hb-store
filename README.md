@@ -1,14 +1,39 @@
 # hb-store
 
-## Project setup
-```
-npm install
-```
+State persistence using Vue + vuex + TS + [Vuex persistence](https://www.npmjs.com/package/vuex-persistedstate)
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## Setup & Run Locally
+
+1. Clone the repository
+
+    ```bash
+    git clone https://github.com/HereComesJuju/hb-store.git
+    ```
+
+2. Enter the repo directory
+
+    ```bash
+    cd hb-store
+    ```
+
+3. Install the dependencies
+
+    ```bash
+    npm install / yarn install
+    ```
+
+4. Run the serve command
+
+    ```bash
+    npm run serve / yarn serve
+    ```
+
+5. Go to
+
+    ```bash
+    http://localhost:8080
+    ```
+
 
 ### Compiles and minifies for production
 ```
