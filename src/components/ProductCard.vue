@@ -66,26 +66,16 @@ export default {
 }
 
 .product-image {
-  display: flex;
-  justify-content: center;
-  align-items: start;
-  margin-bottom: 0.5rem;
+  @apply mb-2 flex justify-center items-start;
 }
 
 .product-image img {
-  height: 200px;
-  object-fit: contain;
+  @apply h-48 object-contain;
 }
 
 .product-info {
-  margin-top: auto;
+  @apply w-5/6 mt-auto flex flex-col justify-between items-center text-center;
   height: calc(100% - 200px);
-  width: 83.333333%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
 }
 
 .title,
@@ -103,10 +93,11 @@ export default {
 }
 
 .product-actions {
-  display: flex;
+  @apply p-2 flex justify-center items-center;
+  /* display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0.5rem;
+  padding: 0.5rem; */
 }
 
 .btn.add-to-cart {

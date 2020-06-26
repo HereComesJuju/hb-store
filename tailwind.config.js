@@ -68,7 +68,11 @@ module.exports = {
         "screen-md": "768px",
         "screen-lg": "1024px",
         "screen-xl": "1280px",
-        "screen-xxl": "1680px"
+        "screen-xxl": "1680px",
+        "10r": "10rem"
+      },
+      minHeight: {
+        "10r": "10rem"
       },
       screens: {
         xs: { min: "425px", max: "639px" },

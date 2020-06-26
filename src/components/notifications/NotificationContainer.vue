@@ -27,9 +27,6 @@ export default {
 
 <style scoped>
 .notification-container {
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  padding-right: 40px;
+  @apply fixed bottom-0 right-0 pr-40;
 }
 </style>

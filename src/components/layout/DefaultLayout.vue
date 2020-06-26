@@ -9,13 +9,11 @@
 
 <script>
 import { mapState } from "vuex";
-// import NavBar from "@/components/nav/NavBar.vue";
 import TopBar from "@/components/layout/topbar/TopBar.vue";
 
 export default {
   name: "DefaultLayout",
   components: {
-    // NavBar,
     TopBar
   },
   computed: {

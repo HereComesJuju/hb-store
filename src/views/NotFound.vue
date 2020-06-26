@@ -30,8 +30,7 @@ export default {
 }
 
 .btn {
-  @apply bg-blue-500 text-white font-bold py-2 px-4 rounded;
-  margin: 1rem 0;
+  @apply mr-0 my-4 px-4 py-2 bg-blue-500 text-white font-bold rounded;
 }
 
 .btn:hover {

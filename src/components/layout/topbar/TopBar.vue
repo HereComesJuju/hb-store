@@ -33,7 +33,7 @@ export default {
   @apply fixed h-16 w-screen p-4 flex justify-center items-center z-50 bg-main-bg text-lg;
 }
 #top-bar {
-  @apply h-full w-full max-w-screen-xxl px-6 py-4 mx-auto my-0 flex justify-between items-center;
+  @apply h-full w-full max-w-screen-xxl px-2 py-4 mx-auto my-0 flex justify-between items-center;
 }
 
 @screen lg {

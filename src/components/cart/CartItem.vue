@@ -57,8 +57,7 @@ export default {
 
 <style scoped>
 .cart-item {
-  @apply w-full py-4 mx-auto flex justify-between items-center text-sm border-b border-gray-400;
-  min-height: 10rem;
+  @apply w-full min-h-10r py-4 mx-auto flex justify-between items-center text-sm border-b border-gray-400;
 }
 
 .cart-item-section {
@@ -66,17 +65,11 @@ export default {
 }
 
 .item-image {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  margin-bottom: 0.5rem;
-  margin-right: 1rem;
-  max-width: 150px;
+  @apply max-w-10r mr-4 mb-2 flex justify-center items-start;
 }
 
 .item-image img {
-  width: 100%;
-  object-fit: cover;
+  @apply w-full object-cover;
 }
 
 .title {

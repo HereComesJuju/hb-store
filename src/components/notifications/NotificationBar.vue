@@ -38,6 +38,6 @@ export default {
 
 <style scoped>
 .notification-bar {
-  margin: 1em 0 1em;
+  @apply my-4;
 }
 </style>
