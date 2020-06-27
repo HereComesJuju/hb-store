@@ -38,6 +38,6 @@ export default {
 
 <style scoped>
 .cart-items {
-  @apply w-full max-w-screen-xxl p-4 mx-auto my-0;
+  @apply w-full max-w-screen-xxl p-4 mx-auto my-0 overflow-y-auto;
 }
 </style>
